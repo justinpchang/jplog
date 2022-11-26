@@ -4,4 +4,4 @@ title:  "Hello, world!"
 date:   2022-11-25 21:49:45 -0500
 categories: life
 ---
-Hello? Is anyone there?
+Is anyone there?
