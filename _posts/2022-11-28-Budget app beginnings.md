@@ -66,13 +66,13 @@ I'll keep the blog updated with any progress I make on the app! That's all for n
 
 **References**
 
-1. https://www.mintmobile.com/
+1. [Mint Mobile](https://www.mintmobile.com/)
 
-2. https://plaintextaccounting.org/
+2. [Plaintext Accounting](https://plaintextaccounting.org/)
 
 3. [The Excel Formula Language Is Now Turing-Complete](https://www.infoq.com/articles/excel-lambda-turing-complete/)
 
-4. https://remotestorage.io/
+4. [remoteStorage.js](https://remotestorage.io/)
 
 5. [GitHub - sql-js/sql.js: A javascript library to run SQLite on the web.](https://github.com/sql-js/sql.js/)[GitHub - sql-js/sql.js: A javascript library to run SQLite on the web.](https://github.com/sql-js/sql.js/)
 
