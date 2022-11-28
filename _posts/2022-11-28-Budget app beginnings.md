@@ -4,13 +4,11 @@ title: "Budget app beginnings"
 date: 2022-11-28 12:44:00 -0500
 ---
 
-# Budget app beginnings
-
 My general wish for this blog is to be a space where I am forced to flesh out my thoughts. During my time in college, I found that writing is the best method for thinking deeply, and I'm also hoping that the push to publish it on a public site will augment the benefit of just writing for myself. I don't really care who is reading it; in fact, I consciously am never going to add engagement features like liking, sharing, commenting, etc., so that I never have to think about who is reading. There just has to be the possibility that somebody could be reading so that I can orient my voice to the general reader.
 
 It's fitting, then, that my first *real* post (disregarding the Hello World test post that seems to be a requirement for all developer blogs) is an attempt to concretize my ideas about my current side project.
 
-## Motivation
+# Motivation
 
 There seem to be two veins of personal budgetting apps, where the primary differentiator is the level of manual control given to the user:
 
@@ -24,11 +22,11 @@ So, I favor the hands-off apps. The lineage of these apps can be traced back to 
 
 I've been experimenting with Google Sheets for a few months, and it seems to be an almost-perfect approach. You get all of the benefits of the hand-written ledger outlined above, and you also get as many analysis reports as your data-loving heart wishes through the spreadsheet formula language, which became Turing complete last year [3]. Now, the only downside (oh, those pesky downsides) is that spreadsheet software works like absolute hot garbage on mobile platforms. The benefit of having a virtual ledger is that I can access it from anywhere, but the dismal UX of mobile spreadsheet apps means I never want to actually open the Google sheets app (why is startup so slow??) and enter in my data after zooming-in and out trying to find where I am in the sheet.
 
-## Enter, Moolah (name pending)
+# Enter, Moolah (name pending)
 
 The purpose of my budget app tries to improve on the options detailed above by including all the analytics wins from using spreadsheet formulas, while solving for the data entry problem by having a mobile-first app design for transaction viewing and entry. It's a very simple concept, but I haven't found anyone who has done it before in an implementation that I like. People have created hacky approaches of a web frontend with a Google Sheets backend, but I don't want the ugly spreadsheets to be a part of the process at all. It's not like I'm constantly writing new and different reports; I want to spend some upfront effort writing a collection of reports that I want to see, and then I want to easily view those reports with updated data in my hand.
 
-## Implementation
+# Implementation
 
 We may then separate the two main concerns of the app as follows:
 
@@ -50,7 +48,7 @@ For the second concern, I plan to create a Javascript scripting editor. The user
 
 This second concern is really the part that excites me the most technologically. I am currently finishing up an MVP for the first concern, and I will most likely post another blog post mid-way through the second concern.
 
-## Extensions
+# Extensions
 
 I think it's always good to have some dreams about a project, even if you may never get to them. These are what I call "extensions". With my current project, I've thought about the following extensions:
 
