@@ -135,7 +135,7 @@ Another factor in oven spring is your fermentation level. You want to bake your 
 
 Use the following graphic for a postmortem analysis of your fermentation via your crumb so you can learn for next time.
 
-[How to read a sourdough crumb](https://imgur.com/a/Qmaurtn)
+[How to read a sourdough crumb](https://i.imgur.com/naum7PN.jpeg)
 
 ### Aliquot jars
 
