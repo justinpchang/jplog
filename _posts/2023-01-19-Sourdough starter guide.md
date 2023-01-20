@@ -1,0 +1,145 @@
+---
+layout: post
+title: "Sourdough 'starter' guide"
+date: 2023-01-19 23:12:00 -0500
+---
+
+# Sourdough “starter” guide
+
+There is so much information about sourdough online and a lot of it directly contradicts each other. Below, I’ve tried to compile what I know works from my research and experience. You’ll ultimately have to do your own research and find what works out for you in your environment through experimentation and recording your results, but this should be a good starting place.
+
+# All about starter
+
+### What is a sourdough starter?
+
+Sourdough starter is a natural yeast that is fed with flour and water. During the process of making a starter, we are trying to capture a specific strain of yeast out of the air and feeding it over a long period of time so that it outlives other types of yeast and bacteria in the starter. Now that you have a stable starter, you don’t have to worry about that. Now, you just need to feed it.
+
+### Why feed sourdough starter?
+
+The starter is a living thing, so you need to constantly feed it to keep it alive. Like a pet. When you feed it the flour and water mixture, the yeasts work hard to digest all the food. In this digestion process, it creates a lot of carbon dioxide byproduct, just like when we breathe out. This carbon dioxide emission is the gas that causes bread dough to rise during bulk fermentation or to spring in the oven.
+
+### When to feed sourdough starter
+
+The more consistently you feed your starter, the more active and alive it becomes. This means you’ll have much better bread. A very alive and well starter will double in size at around 4 hours after feeding, and it will continue until it has tripled in size over the next few hours after that. This timeline is affected by ambient temperature as well (warmer environment means greater activity means faster rise). At some point, the starter reaches it’s “peak” which is the highest it will rise in that feed. It will stay there for around an hour, then it will start to collapse and fall, slowly reaching its original size in around 12 hours after feeding. It’s falling because it’s “hungry,” i.e. it needs to be fed again because it has run out of usable food.
+
+You will notice the starter change texture over the course of this lifecycle. When the starter is hungry, such as when you are about to feed it or equivalently 12 hours after feeding, the mixture will be very slack and loose. When the starter has been fed and is rising quickly, there will be some structure to it from the gluten that is developing in the mixture. When the starter is at peak, it will be very gassy and bubbly from how much CO2 has been off-gassed.
+
+You can build a very active starter by making sure it never gets very hungry. This generally means feeding it every 8-12 hours when you are keeping your starter at room temp. This seems like a lot of work! But thankfully, you can take long breaks if you don’t plan on baking soon.
+
+### Keeping starter in the fridge
+
+Recall that a colder environment slows down fermentation while a warmer environment speeds up fermentation. If you throw your starter into the fridge (optimally around 38 to 42 deg F), it will slow to the point that it won’t become very hungry or die for months. So, if you don’t plan on baking bread in the next few days, throw your starter in the fridge and you don’t have to worry about it! When you do want to bake, bring your starter out a day or two ahead and start feeding it every 8-12 hours again just to wake it up and strengthen it in preparation for your bake.
+
+### Steps to feed sourdough starter
+
+1. Empty all of your starter into a spare bowl
+2. Rinse out your empty starter jar (this ensures there is no dried starter residue build up that can cause mold and kill your starter!)
+3. Add X grams of starter back into your jar
+4. Add X grams of All Purpose flour into your jar
+5. Add X grams of water into your jar
+6. Mix the starter, flour, and water until a homogenous mixture forms
+7. Use your spoon or a wet paper towel to wipe down the insides of your jar
+8. Mark the current level of your starter on the outside of a jar with a rubber band so you can measure how much it has risen over time
+9. The rest of the starter in the bowl is called “discard.” Empty this into a big container in the fridge of older discard to use in “sourdough discard” recipes (described later). Or you can just throw it away.
+
+### How to calculate X above
+
+You will notice in the recipe that we are doing a 1:1:1 ratio of starter:flour:water when feeding the starter. Using baker percentages, this can also be written as keeping the starter at 100% hydration. This is a good starting place that won’t fail you, but as you get more experience, you can play around with modifying this. The best thing about sourdough baking is how much optimization and data collection you can get into if you want. For example, my best breads come from a feeding schedule of 1:4:4 → 8 hours → 1:3:3 → 6 hours → 1:2:2 → 4 hours → BAKE!
+
+So, back to calculating X. This depends on what you are using your starter for. For example, if the bread recipe I am going to bake calls for 100g starter, I will make sure to feed so that I have at least 120g or so of starter by the time I am going to add the starter to the dough. 120g of starter equates to X=40g. So the feed right before baking would have to be 40g starter, 40g water, 40g flour (if using a 1:1:1 ratio). But the feed before that could be 15g:15g:15g to get you the ~40g of starter you needed for the pre-bread feed. In this way, you can plan ahead and change your feed amounts accordingly so that you don’t have to discard so much. My minimum amount of starter that I’ve found still works well is 8g. Accordingly, my minimum ratio of sourdough to food that I use is 1:12 or so (ex: 10g starter, 60g water, 60g flour) before the starter is kind of “drowned” in food and takes a long time to peak.
+
+My standard feed is 20g:20g:20g. This lets me accumulate discard at a rate that fits how much I bake, and it also makes sure I have enough active starter on hand to make at least 1 medium loaf if the urge ever hits me.
+
+### Sourdough discard
+
+The discard step at each feed can feel really wasteful at first. But you can use that discard in baking too. It doesn’t have much special fermentation powers anymore like active sourdough starter, but it is still just a flour and water mixture. Just with a TON of yummy, tangy flavor. In fact, discard that has been sitting in the fridge for 2 weeks or so has BETTER sour flavor than active starter. You can sub it into any recipe that uses flour and water pretty much for a special kick. I’ll include some favorites below.
+
+# Recipes and resources
+
+### Classic artisinal loaf
+
+This loaf is usually shaped into a boule (the round one) or batard (the longer one somewhere in between boule and baguette). It has a crunchy crust with soft and fluffy interior. Sourdough enthusiasts usually also shoot for an “open crumb” with these loaves, which just means that the inside has lots of large and small holes distributed evenly throughout the bread.
+
+- [Full Proof Baking’s Basic Open Crumb Sourdough Bread](https://www.youtube.com/watch?v=HlJEjW-QSnQ&ab_channel=FullProofBaking) is a GREAT starting point. This is the basis of my go to recipe. It introduces you the main kneading/structuring methods you’ll see in every recipe: stretch and fold, coil folds, and my personal favorite, lamination. This recipe is high labor, but in the end, it really is worth it. Don’t worry about following the starter feed schedule she has in the video to a T, it doesn’t really matter.
+- [The Perfect Loaf’s Beginner Sourdough Bread](https://www.theperfectloaf.com/beginners-sourdough-bread/) is a more friendly recipe that still produces a great loaf. This is what I personally started with. The Perfect Loaf site, where this recipe comes from, is also a goldmine of sourdough information. Check out some of the guides on his site if you want to learn tips, tricks, and hacks about sourdough.
+- [Joshua Weissman’s Ultimate Sourdough](https://www.youtube.com/watch?v=jJpIzr2sCDE&ab_channel=JoshuaWeissman) recipe is good and well known on the internet and will give you a good result, but I really just can’t stand watching his personality the amount of times that you’re required to revisit a recipe over the course of making bread.
+
+### Loaf pan bread
+
+I’m talking about sandwich bread here. I don’t really make these at all, but if you want to explore, TPL’s (The Perfect Loaf’s) [pain de mie](https://www.theperfectloaf.com/pain-de-mie/) recipe is good.
+
+### Discard recipes
+
+- [KA Sourdough Crackers](https://www.kingarthurbaking.com/recipes/sourdough-crackers-recipe) are AMAZING. I make these all the time with my discard. You can add whatever mix-ins you want (I usually add some kind of salty aged cheese and some Italian herbs or go all in on a cheez it replica)! You can make a big batch and freeze chunks of dough for months later if you ever mismanage and accidentally accumulate too much discard. They’re super easy to make too.
+- [KA Discard Scallion Pancakes](https://www.kingarthurbaking.com/recipes/quick-sourdough-herb-and-scallion-pancakes-recipe) are also a classic. You can make any kind of savory pancake by adding discard and a little bit of flour and water until you get a pancake consistency. Then mix in anything like scallions or chives or I’ve even done cilantro, throw into a skillet with oil on medium low. This produces a great tangy and salty snack.
+- [KA Sourdough Pretzels](https://www.kingarthurbaking.com/recipes/sourdough-pretzels-recipe) don’t make a very good pretzel, but I usually create this dough and then wrap it around some hotdogs, blanch in baking soda and boiling water, and then bake with some flaky salt and a cheese dip. Delicious!
+- [NYT Sourdough Pancakes/Waffles](https://cooking.nytimes.com/recipes/1018025-sourdough-pancake-or-waffle-batter) are also a good way to use up sourdough discard in your normal cooking. As I said before, you can just throw it into any recipe as a flour and water replacement for the extra tang.
+- [Little Spoon Farm Sourdough Brownies](https://littlespoonfarm.com/sourdough-brownies-recipe/). On the other hand, you don’t always want to really taste sour. These brownies are a great way to learn how to incorporate the sourness of starter in a way that doesn’t make the end product sour but just brings out all the other flavors. It uses the sourdough starter as the X-factor in these brownies.
+
+### Others
+
+- I generally stay away from King Arthur’s recipes for any actual bread recipes (but their flour is the gold standard). I’ve had bad experience with them and don’t find them to be very consistent or as well-researched as some of the stuff I’ve linked above.
+- You really don’t need too many of these recipes. My recommendation is to find one that you find clear and mildly entertaining (you’ll watch it a bunch). Then keep making that over and over. Keep the recipe constant so you can improve technique.
+- [How to shape a boule](https://www.youtube.com/watch?v=IWA0RAAsBHg&ab_channel=ThePerfectLoaf)
+- [How to shape a batard](https://www.youtube.com/watch?v=GkwQR5CnM6Y&ab_channel=ThePerfectLoaf)
+- [General sourdough knowledge guide from King Arthur](https://www.kingarthurbaking.com/learn/guides/sourdough)
+
+# Miscellanous tips
+
+### Autolyzing is a myth
+
+In many recipes (especially the first one that I linked), the baker calls for first mixing the flour and water together and letting it sit for up to 3 hours?! Then mix in the starter/levain, wait again, then mix in the salt. The rationale for this is that you want to let the water fully hydrate the flour and then let it sit to start building up some gluten naturally. Then you need to mix in the starter before the salt otherwise it incorporates inconsistently or something.
+
+This is bogus in my experience. In any recipe that calls for something like this, I usually just add the starter directly to the water with the salt so that it disolves much much more easily. Then add in the flour to all of that. And cut out all the waiting time (but make sure you adjust when you feed the starter accordingly). I get the exact same results as when I autolyze. There are lots of videos and info online about this debate.
+
+### What flour to use
+
+Again, lots of recommendations online, and many of those recommendations conflict with one another. Currently, I’m going with 100% AP flour when feeding my starter, then my ratios vary during bread-making. I usually include at least 20% whole wheat (as a baker’s percentage) because I find the fully white loaves just a bit too much. I need some of the earthiness.
+
+A common recommendation here is to feed your starter with the same flour ratios that you use in your bread, but pulling out two types of flour every time I feed is just a bit too excessive for me.
+
+Others say only ever feed the starter with organic rye, and just don’t do that. Way too expensive.
+
+I do always try to go with KA flour. Their AP is already such a high protein content that you can use it in place of any European’s recipe that calls for “strong bread flour.” Their other flour options are also all solid.
+
+### Dealing with the weather
+
+The sweet spot for sourdough fermentation (for feeding and bread-making) is around 75 deg F ambient temperature. This is hard to achieve by just using your house AC. Right now, in Vermont winter, the ambient temperature in the apartment is around 64 deg F, which throws off all my timing and slows everything down. So my solution is to keep the starter or rising bread dough in a shut oven. Every so often, I’ll turn it on to heat for a few mins at the lowest setting until it reaches around 80 deg. When I leave it off and closed, it works its way back down to 68 deg or so overnight, so not so bad!
+
+You can also use a proofing box that you buy online. I’m attempting to make my own soon, and I’ll let you know how it goes. The biggest thing is you just need to keep track of the variables and try to stay consistent!
+
+### Record everything to improve
+
+The first bread may not be perfect. Or if it is, the second bread will somehow not work despite following all the same instructions. Consistency really is the key. Control as much as you can so that you can change one thing at a time and see how your bread reacts. I keep a notebook where I just write down any sourdough related activities and observations. In it, I keep track of of course what I’m doing, but also ambient temperature, dough temperature using an instant read thermometer, how the starter smells, how the dough feels, how it reacts to kneading or shaping, how it bakes, everything! Over time, you start to see trends and work your way towards your perfect loaf.
+
+### Scoring
+
+The “ear” is that little lip on the top of sourdough loaves that rises. Bakers LOVE a huge ear, something you can lift the loaf by! It’s partly an aesthetic choice, a fashion, but it also is a good indicator that you did everything right throughout the baking process, similar to an open crumb. One of the biggest things from stopping people from having a good ear even when everything else is good is the scoring technique. Basically, you want a very clean cut at around a 45 deg angle from end to end in a straight line on the top of the loaf. The clean cut necessitates a razor blade or a bread lame (which is just a razor blade attached to a stick). A sharp knife really won’t cut it here. To make the bread more receptive to a clean cut, keep it in the fridge until right when you’re about to put it in the oven (see the end of the first recipe for more details). A cold dough keeps shape better.
+
+### Oven spring
+
+Oven spring refers to how much the dough rises in the oven. You want it to rise a ton, blowing out the top of the dough at the score and creating a big beautiful ear.
+
+Steam is really the name of the game here. Dutch oven works because it traps in the steam that the dough lets out. The steam ensures that the top of the dough doesn’t harden too quickly in the high heat so that the insides can spring open. Too much steam, though, will cause your crust to never fully form. So, just like all of sourdough baking, it’s all about finding the perfect sweet spot.
+
+### Baking vessels
+
+The dutch oven is the easiest and most popular baking vessel. Preheat the dutch oven as hot as it goes, put the dough inside with the lid on, bake for 20 mins, then remove lid and lower heat, and bake for another 20 mins or until dark and crispy.
+
+The way that works the best for me is actually using a baking stone. Preheat the stone, then use a pizza peel to put the dough on top. Cover with a big upside down roasting tin with a few ice cubes underneath to produce steam. Then bake for 20, remove cover and lower heat, and bake for 20 more until done.
+
+### Fermentation
+
+Another factor in oven spring is your fermentation level. You want to bake your dough right at the perfect level of fermentation. The same process that causes the starter to rise after feeding is what causes the dough to expand and then the bread to rise in the oven. So it’s all about timing. Too soon (underfermented, underproofed), and you dough creates uneven, huge bubbles because it rose “too” fast. This creates what’s called “fool’s crumb” because it looks good at first glance, but its uneven distribution reveals underfermentation. Too late (overfermented, overproofed), and the dough is slack, doesn’t shape well, and won’t spring much. Fermentation level is really the hardest thing to nail down for me because it depends on so many different factors (how active the starter is, what kind of feeding regimen it’s used to, how much water you use in the dough, the temperature of the environment and the dough, how much you knead and structure the dough, etc.).
+
+[Here’s a great video on how to tell how proofed your dough is.](https://www.youtube.com/watch?v=l0sstWBentA&ab_channel=ChallengerBreadware)
+
+Use the following graphic for a postmortem analysis of your fermentation via your crumb so you can learn for next time.
+
+[How to read a sourdough crumb](https://imgur.com/a/Qmaurtn)
+
+### Aliquot jars
+
+This is a technique I’m just experimenting with now that can help you time your proof just right. The basic idea is right at your first stretch and fold, chop off a bit of dough and put it into a small, narrow but tall vessel. Then you can more easily see cues like when the dough has 1.5x or doubled in size than an amorphous blob in a bowl. The tricky part is keeping the jar at the exact same temp as your dough (which changes temp due to its larger surface area, different material/density, amount of handling, gluten development, etc.).
+
+# That’s all from me. Have fun!
