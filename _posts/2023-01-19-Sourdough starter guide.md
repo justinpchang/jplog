@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: bland_with_toc
+toc: true
 title: "Sourdough 'starter' guide"
 date: 2023-01-19 23:12:00 -0500
 ---
-
-# Sourdough “starter” guide
 
 There is so much information about sourdough online and a lot of it directly contradicts each other. Below, I’ve tried to compile what I know works from my research and experience. You’ll ultimately have to do your own research and find what works out for you in your environment through experimentation and recording your results, but this should be a good starting place.
 
