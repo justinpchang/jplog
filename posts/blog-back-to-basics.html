@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="all" href="../styles.css" />
+    <title>Blog update: Back to basics</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="title">
+        <aside>
+          <a href="../index.html"><p>&larr; Back to posts</p> </a>
+        </aside>
+        <h1>Blog update: Back to basics</h1>
+        <p><time datetime="2023-03-17">17 March 2023</time></p>
+      </div>
+      <p>
+        Well, we're coming up on two consecutive months without posting, which
+        means that this blog experiment has been a failure. Which is okay, of
+        course. I probably have 10 times more failed projects than deployed
+        projects. That rate seems okay to me, but that's a blog post for another
+        day. Maybe. If the blog still exists. This is like my fourth try.
+      </p>
+      <p>
+        Just because the blog project has failed so far doesn't mean that I'm
+        going to give up on it, though! I'm giving it another shot now by
+        rewriting the static site generator behind this website... Or really I'm
+        removing the static site generator. I am now the static site generator.
+        This is my static site. Look around you. All of this is just native HTML
+        + CSS. Absolutely no interactivity, no Javascript. It's honestly a
+        breath of fresh air from the React I write in my day job. Fiddling with
+        blog tech instead of writing posts seems like the kind of counter
+        productive activity that has caused all of my past blogging attempts to
+        fail, but it has led me to write this blog post. And this blog post
+        thankfully resets the <code>TIME SINCE LAST BLOG</code> counter so that
+        I don't have to feel so bad about leaving the site unattended until at
+        least two more months.
+      </p>
+      <p>
+        The core of this rewrite is just going back to the basics and serving a
+        totally static site. This page is just an HTML document that I wrote by
+        hand, linked to a CSS stylesheet that I also wrote by hand. The
+        index/main page are also just HTML documents that I will manually
+        maintain by copying and pasting the formatting for linking to my most
+        recent post.
+      </p>
+      <p>
+        I haven't really written static HTML/CSS websites since I learned how to
+        code during my fourth (?) grade summer technology camp. It's pretty
+        enjoyable, though, to write in semantic HTML5. To run a blog like this,
+        all it requires is settling on a common structure for each page. Then,
+        one stylesheet can be created that targets tags instead of classes or
+        ids which makes the HTML document much cleaner. Check out the source
+        code of this page to see the structure I've settled on. I just have one
+        big <code>content</code> div that supports headings, paragraphs, lists,
+        and asides, so far. Images and code blocks are coming soon, then at that
+        point, we'll have all the tools we need to write any sort of blog post.
+      </p>
+      <p>
+        I was worried that having to write raw HTML as opposed to markdown would
+        increase the effort required in writing each post, but that really
+        doesn't seem to be the case. I'm writing this post now in VSCode,
+        split-screened with an HTML preview window. I quite like this set up. It
+        is perhaps a little less immersive and focussed than, say, a fullscreen
+        Notion session, but that also might be a good thing. Processes that feel
+        scrappy are easy to jump in and lab something out, whereas I've found
+        that processes that feel clean and efficient and well-structured give me
+        the impression that what I'm producing within those processes better
+        have the same quality. Which, of course, then leads to perfectionism
+        paralysis.
+      </p>
+      <p>
+        So my theory is that by writing within this suboptimal
+        experience&mdash;with VSCode trying to code auto-complete every single
+        word I type with Emmet Abbreviations, with paragraphs running off the
+        right side of the page unless I enable Prettier word wrap, with this
+        god-awful default HTML tag auto-close that never closes the tag how I
+        want it&mdash;I will hopefully feel more at ease with writing freely and
+        thus more frequently. We'll see how it actually turns out. Stay tuned.
+      </p>
+      <footer>Contact me at <i>justinpchang (at) gmail (dot) com</i></footer>
+    </div>
+  </body>
+</html>
