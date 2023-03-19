@@ -149,17 +149,22 @@ aside a {
   }
 }
 
+/* CODE */
+code {
+  font-size: 80%;
+}
+
 /* LISTS */
 ul,
 ol {
   margin-left: 2rem;
-  margin-bottom: 1em;
   line-height: 1.45;
   font-size: 0.81rem;
 }
 
 li {
-  margin-bottom: 1em;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 /* LINKS */

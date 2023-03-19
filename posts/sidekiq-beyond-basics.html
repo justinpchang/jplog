@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="all" href="../styles.css" />
+    <title>Sidekiq beyond basics</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="title">
+        <aside>
+          <a href="../index.html"><p>&larr; Back to posts</p> </a>
+        </aside>
+        <h1>Sidekiq beyond basics</h1>
+        <p><time datetime="2023-03-18">18 March 2023</time></p>
+      </div>
+      <p>
+        This post contains some notes I took while reading through the
+        <a href="https://github.com/sidekiq/sidekiq/wiki">Sidekiq Github wiki</a
+        >. These notes assume that you already have a basic working experience
+        with Sidekiq, including creating and managing jobs. As such, it skips
+        over those basics.
+      </p>
+      <h2>Basics</h2>
+      <ul>
+        <li>
+          Workers get 25 seconds to shutdown in the case of Heroku restart,
+          etc., and any remaining jobs are pushed back to the queue.
+          <ul>
+            <li>This entails jobs should not be very long running.</li>
+          </ul>
+        </li>
+        <li>
+          You can either enqueue jobs by calling <code>perform_now</code>,
+          <code>perform_in</code>, or <code>perform_async</code> on the Job
+          Class, or you can use the generic
+          <code
+            >Sidekiq::Client.push(&#39;class&#39; =&gt; JobClass, &#39;args&#39;
+            =&gt; [...])</code
+          >.
+        </li>
+        <li>
+          Arguments must be simple JSON datatypes since they are serialized into
+          a string in Redis.
+        </li>
+        <li>
+          Jobs should be idempotent, meaning that they should be able to be
+          <strong>safely</strong> executed multiple times.
+          <ul>
+            <li>
+              Due to Sidekiq’s retry functionality as well as having the Redis
+              queue live separately from the main app and database, there is
+              <strong>no guarantee</strong>
+              that jobs are only executed once. Even first-time successful jobs.
+            </li>
+          </ul>
+        </li>
+        <li>
+          By default, each Sidekiq process has 10 threads, but you can adjust it
+          with parameter or environment variable.
+          <ul>
+            <li>
+              Should not go above 10, and 5 is recommended for Heroku 1x or 2x
+              dynos.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Sidekiq bundles <code>connection_pool</code> to limit database
+          connections if necessary.
+        </li>
+      </ul>
+      <h2>Redis</h2>
+      <ul>
+        <li>
+          Cloud-based Redis deployments can face errors from network timeouts.
+          If this is the case, experiment with increasing the timeout which is
+          defaulted to 1 second.
+        </li>
+        <li>
+          Set <code>maxmemory-policy noeviction</code> in
+          <code>redis.conf</code> so Redis doesn&rsquo;t drop Sidekiq&rsquo;s
+          data silently.
+        </li>
+      </ul>
+      <h2>Error handling and debugging</h2>
+      <ul>
+        <li>
+          Connect an error service to Sidekiq and then let Sidekiq catch job
+          exceptions to take advantage of error reporting and automatic retry.
+          <ul>
+            <li>
+              Don&rsquo;t need to manually connect the error service in most
+              cases. Each Sidekiq job spawns our entire Rails env for access to
+              the Rails API, but it has the side benefit that normal error gems
+              are already loaded in. Like how we get Rollbar errors for Sidekiq
+              jobs already.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Automatic retry follows exponential backoff according to
+          <code>(retry_count ** 4) + 15 + (rand(10) * (retry_count + 1))</code>
+          which equates to 25 retries over 21 days. After that point, a job is
+          moved to the Dead Job queue where it can be manually retried before
+          being dropped after 6 months.
+          <ul>
+            <li>
+              Configure max retries in <code>sidekiq.yml</code> or per job using
+              the <code>retry</code> <code>sidekiq_options</code> in the Job
+              Class
+            </li>
+          </ul>
+        </li>
+        <li>
+          To send TTIN to a worker process:
+          <code>Sidekiq::ProcessSet.new.each {|ps| ps.dump_threads }</code>
+        </li>
+        <li>
+          View rest of the Queue and Process API
+          <a href="https://github.com/sidekiq/sidekiq/wiki/API">here</a>
+        </li>
+        <li>
+          View signals documentation
+          <a href="https://github.com/sidekiq/sidekiq/wiki/Signals">here</a>
+        </li>
+      </ul>
+      <h2>Multiple queues</h2>
+      <ul>
+        <li>
+          Why?
+          <ul>
+            <li>Ability to stop one job type but keep others running.</li>
+            <li>Different priorities and time urgencies.</li>
+          </ul>
+        </li>
+        <li>
+          Each queue can be configured with a weight for processing. Setting
+          each queue with a weight of 1 will give random queue priorities.
+        </li>
+        <li>
+          Define which queue in the Job Class by using the
+          <code>queue</code> <code>sidekiq_options</code>
+        </li>
+        <li>
+          Do not have many queues per Sidekiq process to avoid complexity
+          (including exponential polling the Redis process for each additional
+          queue). Instead, use multiple Sidekiq processes that handle different
+          queues.
+        </li>
+      </ul>
+      <h2>Logging</h2>
+      <ul>
+        <li>
+          Each job can use <code>logger.info</code> or
+          <code>logger.debug</code> to access the Sidekiq logger
+        </li>
+      </ul>
+      <h2>Sharding</h2>
+      <ul>
+        <li>
+          Not really necessary since Sidekiq is incredibly efficient (~25,000
+          jobs/second)
+        </li>
+        <li>
+          After that point, view this
+          <a href="https://github.com/sidekiq/sidekiq/wiki/Sharding">doc</a>
+        </li>
+      </ul>
+      <h2>Extensions</h2>
+      <ul>
+        <li>
+          Some things like job retry, batching, and rate limiting are behind the
+          Sidekiq paywall, but most things have an open source alternative.
+        </li>
+      </ul>
+      <h2>Serial execution</h2>
+      <p>
+        For my own use case, serial execution is something unavoidable. I'll
+        detail my approach for this in a different blog post. So long!
+      </p>
+
+      <footer>Contact me at <i>justinpchang (at) gmail (dot) com</i></footer>
+    </div>
+  </body>
+</html>
